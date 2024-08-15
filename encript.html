@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="Styles.Css">
+</head>
+<body>
+    <div class="econtpri">
+        <div class="econtlh">
+            <nav class="enavpag">
+                <a class="enavpag_link" href="index.html">INICIO</a>
+            </nav>
+            <div class="etitle">
+                <p>Para que el Encriptador funcione correctamente deberás cumplir unas condiciones básicas:</p>
+            </div>
+            <div class="edato">
+                <p>1. Texto en minúscula</p>
+                <p>2. Texto sin acentos</p>
+            </div>
+            <textarea class="etextareain" name="etextareain" id="textareain" cols="10" rows="6" placeholder="Ingresa texto aquí"></textarea>
+            <div class="ebutonED">
+                <button class="ebuton" type="button" onclick="encriptar()">Encriptar</button>
+                <button class="ebuton" type="button" onclick="desencriptar()">Desencriptar</button>
+                <a class="ebuton" href="encrip.html">Reset</a>
+            </div>
+        </div>
+        <div class="econtrh">
+            <img class="eimg" src="./asset/Open.png" alt="Candado" id="candado" />
+            <div class="etextout">
+                <p class="etextoutmsn" id="etextout">Esperando Mensaje...</p>
+            </div>
+            <div>
+                <button class="ebutoncopy" type="button" onclick="copiar()">Copiar</button>
+            </div>
+        </div>
+    </div> 
+    <script src="scrip.js"></script>
+</body>
+</html>
 
