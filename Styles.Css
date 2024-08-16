@@ -12,52 +12,94 @@ body {
     height: 100vh;    
 }
 
-.title {
-    font-size: 35px;
-    color: #db9d9d;
-    font-family: "Bruno Ace", sans-serif;
-    padding: 2% 0% 0% 15%;
-}
-
-.navpag {
+.navpag{
     display: flex;
-    position: absolute;
-    padding: 10% 0% 4% 70%;
+    position: relative;
+    top: 2%;
 }
 
 .navpag_link {
-    font-size: 20px;
+    padding: 1%;
+    font-size: 16px;
     color: #eedbdb;
-    padding: 5px 12px 2% 12px;
     text-decoration: none;
     background-color: #eb595969;
-    border: 2px solid #df8c77bb;
+    border: 1px solid #df8c77bb;
     border-radius: 8px;
     font-family: "Bruno Ace", sans-serif;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .navpag_link:hover {
-    background-color: #da7c57d3;
+    background-color: #df8c77bb;
+    color: #ffffff;
 }
 
-.dato {
+.titlesup {
     display: flex;
+    position: relative;
+    width: 65%;
+    left: 16%;
+    font-size: 35px;
+    color: #863631;
+    font-family: "Bruno Ace", sans-serif;
 }
 
-.img {
-    display: flex;
-    position: absolute;
-    padding: 20% 0% 0% 70%;
-    width: 14%;
+.icontsup{
+    position: relative;
+    height: 35%;
+    width: 80%;
+    left: 10%;
+    top: 1%;
 }
 
-h2 {
-    display: flex;
-    color: #030303;
-    padding: 3% 33% 0% 15%;
-    font-size: 20px;
+.textsup{
+    font-size: 24px;
     text-align: justify;
     font-family: "Oxanium", sans-serif;
+}
+
+.titleinf {
+    display: flex;
+    position: relative;
+    width: 30%;
+    left: 15%;
+    top: 6%;
+    font-size: 35px;
+    color: #ec6a61;
+    font-family: "Bruno Ace", sans-serif;
+}
+
+.icontinf{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    height: 25%;
+    width: 80%;
+    left: 10%;
+    top: 12%;
+}
+
+.textinf{
+    font-size: 24px;
+    text-align: justify;
+    font-family: "Oxanium", sans-serif;
+}
+
+.img{
+    position: absolute;
+    height: 18%;
+    top: 48%;
+    left: 45%;
+}
+
+.footer{
+    position: relative;
+    width: 30%;
+    top: 8%;
+    font-size: 18px;
+    font-family: "Bruno Ace", sans-serif;
+    left: 10%;
 }
 
 .econtpri {
@@ -212,28 +254,53 @@ h2 {
 
 /* móviles */
 @media (max-width: 768px) {
-    .title {
-      font-size: 18px;
-      padding: 3% 0% 5% 8%;
-  }
 
-  .navpag {
-    height: 5%;
-    top: 12%;
-    padding: 0% 0% 0% 4%;
-  }
+    .titlesup {
+        font-size: 18px;
+        left: 5%;
+        width: 90%;
+        top: 5%;
+        border: 1px solid #1b18e7;
+    }
 
-  .img {
-    display: flex;
+    .textsup {
+        position: relative;
+        width: 100%;
+        top: 15%;
+        font-size: 15px;
+        border: 1px solid #1b18e7;
+    }
+
+    .titleinf {
+        position: relative;
+        font-size: 20px;
+        left: 15%;
+        width: 70%;
+        top: 12%;
+        border: 1px solid #1b18e7;
+    }
+
+    .textinf {
+        position: relative;
+        top: 10%;
+        font-size: 16px;
+        border: 1px solid #1b18e7;
+    }
+
+    .img{
     position: absolute;
-    padding: 100% 0% 0% 70%;
-    width: 24%;
-  }
+    width: 0%;
+    }
 
-  h2 {
-      font-size: 15px;
-      padding: 20% 5% 0% 5%;
-  }
+    
+
+
+    .footer {
+        width: 50%;
+        font-size: 16px;
+        top: 17%;
+    }
+
 
   .econtpri {
       flex-direction: column;
@@ -283,82 +350,4 @@ h2 {
       margin-top: 2px;
       left: 60%;
   }
-}
-
-  /* tablets */
-@media (max-width: 1024px) and (min-width: 769px) {
-  .title {
-    font-size: 24px;
-    padding: 2% 0% 1% 10%;
-}
-
-.navpag {
-    padding: 2% 0% 2% 30%;
-}
-
-.img {
-  display: flex;
-  position: absolute;
-  padding: 20% 0% 0% 70%;
-  width: 14%;
-}
-
-h2 {
-    font-size: 18px;
-    padding: 8% 5% 0% 5%;
-}
-
-.econtpri {
-    height: 100%;
-    width: 100%;
-}
-
-.etextareain{
-  position: relative;
-  left: 10%;
-  width: 80%;
- }
-
-.econtlh{
-  width: 100%;
-  height: 80%;
-}
-
-.econtrh {
-  width: 100%;
-  height: 80%;
-}
-
-.eimg {
-  position: absolute;
-    width: 25%;
-    height: 26%;
-    left: 40%;
-    top: 20%;
-}
-
-.ebutonED {
-    align-items: center;
-    width: 50%;
-    gap: 20px;
-    left: 15%;
-    top: 1%;
-}
-
-.ebuton {
-    width: 100%;
-    text-align: center;
-}
-
-.ebutoncopy {
-    margin-top: 60px;
-}
-.etextout {
-  display: flex;
-  position: relative;
-  width: 80%;
-    left: 15%;
-    top: 55%;
-
-}
 }
