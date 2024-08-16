@@ -212,30 +212,35 @@ h2 {
 
 /* móviles */
 @media (max-width: 768px) {
-  .title {
-      font-size: 24px;
-      padding: 5% 0% 5% 10%;
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .title {
+      font-size: 18px;
+      padding: 3% 0% 5% 8%;
   }
 
   .navpag {
-      padding: 0% 0% 4% 5%;
+      padding: 0% 0% 0% 4%;
   }
 
   .img {
     display: flex;
     position: absolute;
-    padding: 113% 0% 0% 40%;
-    width: 14%;
+    padding: 100% 0% 0% 70%;
+    width: 24%;
   }
 
   h2 {
-      font-size: 18px;
-      padding: 14% 5% 0% 5%;
+      font-size: 16px;
+      padding: 13% 8% 0% 5%;
   }
 
   .econtpri {
       flex-direction: column;
-      height: 100%;
+      height: 90%;
       width: 100%;
   }
 
@@ -243,11 +248,12 @@ h2 {
     position: relative;
     left: 10%;
     width: 80%;
+    
    }
 
   .econtlh{
     width: 100%;
-    height: 80%;
+    height: 70%;
   }
 
   .econtrh {
@@ -257,19 +263,18 @@ h2 {
 
   .eimg {
     position: absolute;
-      width: 25%;
-      height: 26%;
+      width: 27%;
+      height: 45%;
       left: 15%;
-      top: 60%;
+      top: 63%;
   }
 
   .ebutonED {
       flex-direction: column;
       align-items: center;
-      width: 50%;
-      gap: 20px;
+      width: 45%;
+      gap: 5px;
       left: 25%;
-      top: 1%;
   }
 
   .ebuton {
@@ -278,7 +283,8 @@ h2 {
   }
 
   .ebutoncopy {
-      margin-top: 10px;
+      margin-top: 2px;
+      left: 60%;
   }
 }
 
