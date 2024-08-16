@@ -170,6 +170,18 @@ body {
     outline: none;
 }
 
+.etextoutmsn{
+    font-size: 24px;
+}
+
+.etextout {
+    overflow: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    max-height: 200px;
+}
+
 .ebutonED {
     display: flex;
     flex-direction: row;
@@ -260,6 +272,7 @@ body {
         left: 5%;
         width: 90%;
         top: 5%;
+        border: 1px solid #1b18e7;
     }
 
     .textsup {
@@ -267,6 +280,7 @@ body {
         width: 100%;
         top: 15%;
         font-size: 15px;
+        border: 1px solid #1b18e7;
     }
 
     .titleinf {
@@ -275,18 +289,20 @@ body {
         left: 15%;
         width: 70%;
         top: 12%;
+        border: 1px solid #1b18e7;
     }
 
     .textinf {
         position: relative;
         top: 10%;
         font-size: 16px;
+        border: 1px solid #1b18e7;
     }
 
     .img{
     position: absolute;
     width: 0%;
-    } 
+    }
 
     .footer {
         width: 50%;
@@ -294,53 +310,67 @@ body {
         top: 17%;
     }
 
+    .econtpri {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
 
-  .econtpri {
-      flex-direction: column;
-      height: 90%;
-      width: 100%;
-  }
+    .econtlh{
+        position: relative;
+        width: 100%;
+        height: 150%;
+      }
+      
+    .etitle{
+        font-size: 16px;
+    }
 
-  .etextareain{
+    .edato{
+        font-size: 18px;
+    }
+
+    .etextareain{
     position: relative;
-    left: 10%;
-    width: 80%;
-    
-   }
+    left: 5%;
+    width: 85%;
+    font-size: 14px;
+    }
 
-  .econtlh{
+    .ebutonED {
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    gap: 5px;
+    left: 25%;
+    }
+
+    .ebuton {
+    position: relative;
     width: 100%;
-    height: 70%;
-  }
+    text-align: center;
+    }
 
-  .econtrh {
+   .etextoutmsn{
+    font-size: 14px;
+    }
+
+    .econtrh {
+    position: relative;
     width: 100%;
-    height: 80%;
-  }
+    }
 
-  .eimg {
+    .eimg {
     position: absolute;
-      width: 27%;
-      height: 45%;
+      width: 22%;
+      height: 27%;
       left: 15%;
-      top: 63%;
-  }
+      top: 58%;
+    }
 
-  .ebutonED {
-      flex-direction: column;
-      align-items: center;
-      width: 45%;
-      gap: 5px;
-      left: 25%;
-  }
-
-  .ebuton {
-      width: 100%;
-      text-align: center;
-  }
-
-  .ebutoncopy {
-      margin-top: 2px;
+    .ebutoncopy {
       left: 60%;
-  }
+    }
 }
