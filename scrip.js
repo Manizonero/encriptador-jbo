@@ -16,7 +16,7 @@ function encriptar() {
         .replace(/u/g, "s5")
         .replace(/r/g, "o2");
     document.getElementById("etextout").textContent = textoEncriptado;
-    document.getElementById("candado").src = "./asset/close.png";
+    document.getElementById("Candado").src = "./asset/close.png";
 }
 
 function desencriptar() {
